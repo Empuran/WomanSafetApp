@@ -28,11 +28,11 @@ class SplashScreen_State extends State<SplashScreen> {
   BuildContext contextt;
 
   @override
-  // void initState() {
-  //   Future.delayed(const Duration(milliseconds: 5000), () {
-  //     getuserExistence();
-  //   });
-  // }
+  void initState() {
+    Future.delayed(const Duration(milliseconds: 5000), () {
+      getuserExistence();
+    });
+  }
 
   getuserExistence() async {
     var user;
@@ -54,9 +54,6 @@ class SplashScreen_State extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     contextt = context;
-    return Scaffold(
-        body: Center(
-            child: Image.network(
-                "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202107/South_Africa_1.jpg")));
+     return Scaffold(body: Center(child: Lottie.asset("assets/womens.json")));
   }
 }
